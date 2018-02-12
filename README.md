@@ -22,7 +22,7 @@ as seen in [Pinheiro et al, 2014](http://www.jmlr.org/proceedings/papers/v32/pin
 
     ```pip install -r requirements.txt```
 
-    This project only requires Tensorflow version 11, and PIL for image manipulation.
+    This project only requires Tensorflow and PIL for image manipulation. TensorFlow v1.3.0 has been used for training and testing but it should work with higher versions too without any issue.
 
  3. Download a dataset with which to use the model.
  We used the [Stanford Background Dataset](http://dags.stanford.edu/projects/scenedataset.html) which has 700+ 320x240 images and 8 classes.
