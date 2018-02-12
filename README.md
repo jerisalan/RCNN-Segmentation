@@ -1,5 +1,7 @@
 # Segmentation as a Scene Labeling task with Recurrent Convolutional Neural Networks
-Experiments with Scene Labeling using Recurrent Convolutional Neural Networks on Foraminifera and Unity simulated images for Segmentation task
+Experiments with Scene Labeling using Recurrent Convolutional Neural Networks on two different segmentation tasks:
+1. Formainifera image segmentation to different chambers and apertures
+2. Segmentation of Unity simulated enviroments to safe and unsafe zones
 
 ## Overview
 This project implements a "Recurrent Convolutional Neural Network" (rCNN) for scene labeling,
