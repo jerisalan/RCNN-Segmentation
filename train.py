@@ -159,7 +159,7 @@ def run_model(sess, model, dataset_iter, num_epochs=1, training=False, save_path
             save_model(sess, save_path)
 
 
-def optimize_input(sess, model, labels, step_size=2e-2, num_iterations=200):
+def optimize_input(sess, model, labels, step_size=2e-2, num_iterations=100):
     """
     Optimizes input for the given model using gradient descent, in order to match the given output labels.
     This is done by minimizing loss between the given labels and the output from running the generated image through
@@ -231,9 +231,9 @@ def main():
     parser.add_argument('--data_fraction', type=float, default=None,
                         help='Fraction of data to train on. If positive, trains on first X images, otherwise trains on '
                              'last X images.')
-    parser.add_argument('--hidden_size_1', type=int, default=25, help='First Hidden size for CNN model')
-    parser.add_argument('--hidden_size_2', type=int, default=50, help='Second Hidden size for CNN model')
-    parser.add_argument('--learning_rate', type=float, default=0.0001, help='Learning rate for training CNN model')
+    parser.add_argument('--hidden_size_1', type=int, default=10, help='First Hidden size for CNN model')
+    parser.add_argument('--hidden_size_2', type=int, default=10, help='Second Hidden size for CNN model')
+    parser.add_argument('--learning_rate', type=float, default=0.001, help='Learning rate for training CNN model')
     parser.add_argument('--num_epochs', type=int, default=1, help='Number of epochs for training CNN model')
     parser.add_argument('--model_save_path', type=str, default=None,
                         help='Optional location to store saved model in.')

@@ -49,7 +49,7 @@ as seen in [Pinheiro et al, 2014](http://www.jmlr.org/proceedings/papers/v32/pin
 ### Training
 For training, use the `train.py` script with the `--training` flag. The following command trains the model on the Stanford dataset:
 
-    python train.py --training --dataset stanford-bground --category_map category_maps/stanford_bground_categories.txt --data_dir train_data/ --model_save_path train_model_rcv/
+    python3 train.py --training --dataset stanford-bground --category_map category_maps/stanford_bground_categories.txt --data_dir train_data/ --model_save_path train_model_rcv/
 
 
 Running `train.py -h` will show additional parameters for the script, including different hyperparameters.
@@ -59,7 +59,7 @@ For testing, use the `train.py` script without the `--training` flag.
 This script will get per-class accuracies for each image, as well as output predicted labels as image files.
 The following command loads a saved model and evaluates accuracy on the stanford data set:
 
-    python train.py --model_load_path train_model_rcv/ --category_map category_maps/stanford_bground_categories.txt --dataset stanford-bground --data_dir test_data/ --output_dir test_output_rcv/
+    python3 train.py --model_load_path train_model_rcv/ --category_map category_maps/stanford_bground_categories.txt --dataset stanford-bground --data_dir test_data/ --output_dir test_output_rcv/
 
 
 This outputs per-clas accuracies for each layer of the recurrent rCNN, and also saves predicted labels for each layer.
